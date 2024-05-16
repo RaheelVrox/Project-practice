@@ -1,27 +1,17 @@
-import { StyleSheet, Text, View, StatusBar, FlatList } from "react-native";
 import React from "react";
+import { View, Text, StatusBar, StyleSheet } from "react-native";
 
-const dayes = [...Array(26)].map((val, index) => index + 1);
+const dayes = [1, 2, 3, 4];
 
 export default function App() {
   console.log("hi");
-
-  const renderItem = ({ item }) => (
-    <View style={styles.box}>
-      <Text style={styles.text}>{item}</Text>
-    </View>
-  );
-
   return (
     <View style={styles.container}>
-      <FlatList
-        data={dayes}
-        numColumns={2}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.toString()}
-        contentContainerStyle={styles.content}
-        columnWrapperStyle={styles.colum}
-      />
+      {dayes.map((daye) => (
+        <View style={styles.box} key={daye}>
+          <Text style={styles.text}>{daye}</Text>
+        </View>
+      ))}
       <StatusBar style="auto" />
     </View>
   );
