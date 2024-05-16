@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, StatusBar, FlatList } from "react-native";
 import React from "react";
 
-const dayes = [1, 2, 3, 4, 5, 6];
+const dayes = [...Array(26)].map((val, index) => index + 1);
 
 export default function App() {
   console.log("hi");
