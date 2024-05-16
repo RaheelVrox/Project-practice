@@ -15,11 +15,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-     
       <FlatList
         data={dayes}
         numColumns={2}
-        renderItem={({item})=> <DayListItem/>}
+        renderItem={({ item }) => <DayListItem day={item} hello="word" />}
         keyExtractor={(item) => item.toString()}
         contentContainerStyle={styles.content}
         columnWrapperStyle={styles.colum}
