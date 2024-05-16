@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View,Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable } from "react-native";
 import React from "react";
 import { Link } from "expo-router";
 
 const DayListItem = ({ day }) => {
   console.log(day);
   return (
-    <Link href="/user/followers" asChild>
+    <Link href="/days/day1" asChild>
       <Pressable style={styles.box}>
         <Text style={styles.text}>{day}</Text>
       </Pressable>
