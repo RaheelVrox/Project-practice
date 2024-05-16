@@ -18,7 +18,7 @@ export default function App() {
       <FlatList
         data={dayes}
         numColumns={2}
-        renderItem={({ item }) => <DayListItem day={item} hello="word" />}
+        renderItem={({ item }) => <DayListItem day={item} />}
         keyExtractor={(item) => item.toString()}
         contentContainerStyle={styles.content}
         columnWrapperStyle={styles.colum}
