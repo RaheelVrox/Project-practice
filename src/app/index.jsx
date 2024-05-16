@@ -1,18 +1,11 @@
 import { StyleSheet, Text, View, StatusBar, FlatList } from "react-native";
 import React from "react";
-import DayListItem from "./src/component/core/DayListItem";
+import DayListItem from "../component/core/DayListItem";
 
 const dayes = [...Array(26)].map((val, index) => index + 1);
 
-export default function App() {
+export default function HomeScreen() {
   console.log("hi");
-
-  // const renderItem = ({ item }) => (
-  //   <View style={styles.box}>
-  //     <Text style={styles.text}>{item}</Text>
-  //   </View>
-  // );
-
   return (
     <View style={styles.container}>
       <FlatList
