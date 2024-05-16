@@ -5,7 +5,7 @@ import { Link } from "expo-router";
 const DayListItem = ({ day }) => {
   console.log(day);
   return (
-    <Link href="/days/day1" asChild>
+    <Link href={`/day${day}`} asChild>
       <Pressable style={styles.box}>
         <Text style={styles.text}>{day}</Text>
       </Pressable>

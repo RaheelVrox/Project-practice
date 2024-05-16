@@ -4,10 +4,10 @@ import { Stack } from "expo-router";
 
 const DayDetailScreen = () => {
   return (
-    <View>
-      <Stack.Screen options={{ headerShown: true, title: "Day one" }} />
-      <Text>Day Detail Screen</Text>
-    </View>
+    <>
+      <Stack.Screen options={{ headerShown: true, title: "Day One" }} />
+      <Text>Day Detail Screen one</Text>
+    </>
   );
 };
 
