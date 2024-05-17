@@ -1,11 +1,16 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Stack } from "expo-router";
+import { Link, Stack } from "expo-router";
 const DayDetailScreen = () => {
   return (
     <>
-      <Stack.Screen options={{ headerShown: true, title: "Day Two" }} />
+      <Stack.Screen
+        options={{ headerShown: true, title: "Day Two: Onboarding" }}
+      />
       <Text>Day Detail Screen two</Text>
+      <Link href={"/day2/Onboarding"} asChild>
+        <Button title="Go to Onboarding" />
+      </Link>
     </>
   );
 };
