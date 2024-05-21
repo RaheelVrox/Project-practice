@@ -8,7 +8,7 @@ const DayDetailScreen = () => {
       <Stack.Screen
         options={{ headerShown: true, title: "Day 5: Google map" }}
       />
-      <Text>Animate Splash Screen</Text>
+      <Text>map  Screen</Text>
       <View style={styles.buttonContainer}>
         <Link href={"/day5/Maps"} asChild>
           <Button title="Go to Editor" />
